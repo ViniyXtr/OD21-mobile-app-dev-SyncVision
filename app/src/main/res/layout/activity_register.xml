@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    style="@style/screenBackground"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/registerHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/register_text1"
+        android:textAllCaps="false"
+        style="@style/TextColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="412dp"
+        android:layout_height="199dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notebook" />
+
+    <EditText
+        android:id="@+id/inputRegisterFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_grey"
+        android:ems="10"
+        style="@style/ParagraphTextColor"
+        android:hint="@string/register_text2"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerHead" />
+
+    <EditText
+        android:id="@+id/inputRegisterEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_grey"
+        android:ems="10"
+        style="@style/ParagraphTextColor"
+        android:hint="@string/register_text3"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputRegisterFullName"
+        app:layout_constraintStart_toStartOf="@+id/inputRegisterFullName"
+        app:layout_constraintTop_toBottomOf="@+id/inputRegisterFullName" />
+
+    <EditText
+        android:id="@+id/inputRegisterPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_grey"
+        android:ems="10"
+        style="@style/ParagraphTextColor"
+        android:hint="@string/register_text4"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputRegisterEmail"
+        app:layout_constraintStart_toStartOf="@+id/inputRegisterEmail"
+        app:layout_constraintTop_toBottomOf="@+id/inputRegisterEmail" />
+
+    <EditText
+        android:id="@+id/inputRegisterConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_grey"
+        android:ems="10"
+        style="@style/ParagraphTextColor"
+        android:hint="@string/register_text5"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputRegisterPassword"
+        app:layout_constraintStart_toStartOf="@+id/inputRegisterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/inputRegisterPassword" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_main"
+        android:drawableLeft="@drawable/login"
+        android:drawablePadding="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/register_text1"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/inputRegisterConfirmPassword"
+        app:layout_constraintStart_toStartOf="@+id/inputRegisterConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/inputRegisterConfirmPassword" />
+
+    <LinearLayout
+        android:id="@+id/linearRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/registerBtn"
+        app:layout_constraintStart_toStartOf="@+id/registerBtn"
+        app:layout_constraintTop_toBottomOf="@+id/registerBtn"
+        app:layout_constraintVertical_bias="0.29000002">
+
+        <TextView
+            android:id="@+id/alreadyHaveAnAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ParagraphTextColor"
+            android:text="@string/register_text6"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/registerLoginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_text7"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#6C63FD"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout><androidx.appcompat.widget.SwitchCompat
+    android:id="@+id/switchModeRegister"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="30dp"
+    android:thumb="@drawable/thumb"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearRegister"
+    app:track="@drawable/track" />
+</androidx.constraintlayout.widget.ConstraintLayout>
