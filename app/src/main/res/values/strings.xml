@@ -10,13 +10,13 @@
     <string name="login_text5">Recover Password?</string>
     <string name="login_text6">Sign In</string>
     <string name="login_text7">Don`t have an account?</string>
-    <string name="login_text8">Let`s Register</string>
+    <string name="login_text8">Sign up</string>
     <string name="register_text1">Register</string>
     <string name="register_text2">Enter full name</string>
     <string name="register_text3">Enter email</string>
     <string name="register_text4">Enter password</string>
     <string name="register_text5">Confirm password</string>
     <string name="register_text6">Already have an account?</string>
-    <string name="register_text7">Login</string>
+    <string name="register_text7">Sign in</string>
 
 </resources>
